@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #3b4664;
+  display: flex;
+  justify-content: center;
+}
+* {
+  box-sizing: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header {
+  position: relative;
+  right: 10rem;
+  margin-bottom: 0.5rem;
+}
+.header span {
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 55000;
+
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.cal-area {
+  height: 5rem;
+  width: 365px;
+  background-color: #181f32;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#display {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: 5px;
+  text-align: right;
+  margin-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.main {
+  height: 300px;
+  width: 22.7rem;
+  background-color: #252d44;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+}
+
+.grid-container {
+  width: 21rem;
+  height: 270px;
+
+  margin: 13px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+.item {
+  background-color: #eae3db;
+  font: Inter;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b4664;
+  cursor: pointer;
+}
+#reset {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #647299;
+  color: #ffffff;
+}
+#equalto {
+  font-family: Inter;
+  font-weight: 600;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #d13f30;
+  color: #ffffff;
+}
+#del {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+
+  background-color: #647299;
+}
