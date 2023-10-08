@@ -9,12 +9,16 @@ function appendToDisplay(value) {
 
 function calculateResult() {
   try {
-    display.value = eval(display.value).toFixed(3); 
+    let result = eval(display.value);
+
+    if (result % 1 !== 0) {
+      result = result.toFixed(3);
+    }
+    display.value = result;
   } catch (error) {
-    display.value = 'Error';
+    display.value = "Error";
   }
 }
-
 
 function handleButtonClick(event) {
   const buttonText = event.currentTarget.querySelector('span').textContent;
