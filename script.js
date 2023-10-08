@@ -14,6 +14,7 @@ function calculateResult() {
     if (result % 1 !== 0) {
       result = result.toFixed(3);
     }
+    
     display.value = result;
   } catch (error) {
     display.value = "Error";
